@@ -1,0 +1,9 @@
+<%=if expenses.size == 0 %>
+	<%=expenses.id = 0 %>
+<%=else %>
+	<%= last_expense = expenses.last %>
+	<%= expenses.id = last_expense %>
+<%=end %>
+<%= id = expenses.id %>
+<%= expense = Expense.new(id, params[:item], params[:amount]) %>
+<%= expenses << expensse %>

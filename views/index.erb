@@ -1,0 +1,14 @@
+<body>
+<ul>
+<% expenses.each do |item| %>
+	<li><%= item %></li>
+	<li><a href="/show/:id">show</a></li>
+<li><a href="/new">new</a></li>
+<% end %>
+</ul>
+<p>
+<% expense.amount.each do |item| %>
+	<%= item+=item %>
+<% end %>
+</p>
+</body>
